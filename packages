@@ -1,0 +1,32 @@
+This program requires the following Python packages:
+
+1. `torch`: This is PyTorch, an open source machine learning library based on the Torch library. It provides a wide range of algorithms for deep learning.
+
+2. `numpy`: This is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+
+3. `os`: This is a built-in Python module that interfaces with the underlying operating system that Python is running on.
+
+4. `platform`: This is also a built-in Python module that provides functions to see the platform's hardware, operating system, and interpreter version information.
+
+5. `time`: Another built-in Python module, this one provides various time-related functions.
+
+6. `math`: Yet another built-in Python module, this provides mathematical functions, in this case the log2 function.
+
+You don't need to install `os`, `platform`, `time`, or `math`, as they are part of the Python standard library. However, you'll need to install `torch` and `numpy`.
+
+Before installing these, you need Python itself installed on your system. As of my knowledge cutoff in September 2021, Python 3.8 or 3.9 is typically recommended. 
+
+Next, it's recommended to create a virtual environment to isolate your Python environment. This can be done using `venv` (built-in Python module for creating virtual environments) or `conda` (part of the Anaconda distribution).
+
+Here's an example of how to install the necessary packages with pip, Python's package installer, after you've installed Python and created/activated a virtual environment:
+
+```bash
+python -m pip install --upgrade pip
+pip install numpy==1.19.2
+```
+
+The `--upgrade pip` command is used to make sure you have the latest version of pip.
+
+If you want to use the GPU capabilities of PyTorch, you might need a specific version depending on your CUDA version. Check the PyTorch website for more details.
+
+Remember that this script also requires a machine with CUDA-capable GPU for running the GPU-specific parts. If you don't have one, it will still run, but will skip the GPU tests.
